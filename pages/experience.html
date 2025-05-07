@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Programação</title>
+    
+    <!-- Estilos globais -->
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <!-- Estilos específicos por seção -->
+    <link rel="stylesheet" href="../css/experience.css">
+    <link rel="stylesheet" href="../css/footer.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        const theme = localStorage.getItem("theme") || "light";
+        if (theme === "dark") {
+            document.documentElement.classList.add("dark-mode");
+        }
+    </script>
+</head>
+<body>
+<section id="experience">
+    <header>
+        <nav>
+            <ul id="menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="projects.html">Projetos</a></li>
+                <li><a href="experience.html">Experiência</a></li>
+                <li><a href="about.html">Sobre</a></li>
+                <li><a href="contact.html">Contato</a></li>
+            </ul>
+        </nav>
+        <button id="theme-toggle">Alternar Tema</button>
+    </header>
+    
+    <h2 class="title">Experience</h2>
+    <p>Detalhes sobre sua experiência...</p>
+
+    <!-- Scripts -->
+    <script src="../src/scripts.js"></script>
+    <script src="../src/experience.js"></script>
+    <script src="../src/footer.js"></script>
+    <script src="../src/theme.js"></script>
+</section>
+    <footer>
+        <p>&copy; 2025 Meu Portfólio - Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,181 @@
+@import url('dark-mode.css');
+
+
+/* Modo escuro */
+.dark-mode {
+    --bg-color: #181818;
+    --text-color: #f5f5f5;
+    --primary-color: #1e90ff;
+}
+
+/* Aplicação do tema */
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Título */
+.title-paragraph {
+    color: var(--text-color);
+    font-size: 1em;
+    font-weight: bold;
+}
+
+/* Container de projetos */
+.projeto-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    justify-content: center;
+    padding: 1.5em;
+}
+
+/* Cartões de projeto */
+.projeto-card {
+    background-color: var(--bg-color);
+    padding: 1.2em; /* Reduzi um pouco o padding para menor altura */
+    margin: 0.8em; /* Ajuste fino de espaçamento */
+    border-radius: 16px; /* Cantos levemente mais suaves */
+    box-shadow: 0 3px 10px rgba(10, 0, 0, 0.8);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 calc(28% - 1em); /* Ajuste fino para evitar cartões muito grandes */
+    height: auto; /* Ajuste automático sem valores fixos */
+    max-height: 300px; /* Limite máximo para evitar cartões altos */
+}
+
+/* Melhorando visualização ao passar o mouse */
+.projeto-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
+    transform: scale(1.05);
+}
+
+/* Ajuste no vídeo dentro dos cartões */
+.projeto-card video {
+    width: 100%;
+    max-width: 450px; /* Reduzi um pouco para maior equilíbrio */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-top: 8px;
+}
+
+/* Ajuste no vídeo dentro dos cartões */
+.projeto-card img {
+    width: 100%;
+    max-width: 450px; /* Reduzi um pouco para maior equilíbrio */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-top: 8px;
+}
+/* Cartões de projeto */
+.projeto-card {
+    background-color: var(--bg-color);
+    padding: 1.2em; /* Reduzi um pouco o padding para menor altura */
+    margin: 0.8em; /* Ajuste fino de espaçamento */
+    border-radius: 16px; /* Cantos levemente mais suaves */
+    box-shadow: 0 3px 10px rgba(10, 0, 0, 0.8);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 calc(28% - 1em); /* Ajuste fino para evitar cartões muito grandes */
+    height: auto; /* Ajuste automático sem valores fixos */
+    max-height: 600px; /* Limite máximo para evitar cartões altos */
+}
+
+/* Melhorando visualização ao passar o mouse */
+.projeto-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
+    transform: scale(1.05);
+}
+
+/* Ajuste no vídeo dentro dos cartões */
+.projeto-card video {
+    width: 100%;
+    max-width: 450px; /* Reduzi um pouco para maior equilíbrio */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-top: 8px;
+}
+
+
+/* Modo escuro específico para projeto-card */
+.projeto-card:hover {
+    box-shadow: 0 4px 12px rgb(0, 0, 0);
+}
+
+/* Modo escuro específico para projeto-card */
+.dark-mode .projeto-card {
+    box-shadow: 0 4px 12px rgba(255,255,255,0.2);
+}
+
+/* Modo escuro específico para projeto-card */
+.dark-mode .projeto-card:hover {
+    box-shadow: 0 4px 12px rgba(255,255,255,0.2);
+}
+
+/* Links */
+.projeto-card a {
+    color: var(--primary-color);
+    font-size: 1.8em;
+    font-weight: bold;
+    gap: 10px;
+}
+
+.projeto-card a:hover {
+    color: #0056b3;
+}
+
+
+/* Hover aprimorado */
+.projeto-card:hover {
+    transform: scale(1.07);
+}
+
+/* Links de navegação */
+.projeto-links a {
+    color: var(--text-color);
+    gap: 10px;
+}
+
+.projeto-links a:hover {
+    color: blue;
+    transform: scale(1.1);
+}
+
+
+
+#theme-toggle {
+    position: absolute;
+    top: 26px;
+    right: 20px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 4px 8px; /* Reduzi o tamanho do botão */
+    border-radius: 6px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 2px 4px 8px rgba(0,0,0,0.2);
+    border: 2px solid white; /* Adicionando a linha branca ao redor */
+}
+
+/* Ajustando o botão no modo escuro */
+.dark-mode #theme-toggle {
+    border-color: var(--text-color); /* Muda a borda no modo escuro */
+}
+
+#theme-toggle:hover {
+    background-color: var(--text-color);
+    color: var(--primary-color);
+    transform: scale(1.05);
+}
+
+

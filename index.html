@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Programação</title>
+    
+    <!-- Estilos globais -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Estilos específicos por seção -->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <script>
+        const theme = localStorage.getItem("theme") || "light";
+        if (theme === "dark") {
+            document.documentElement.classList.add("dark-mode");
+        }
+    </script>
+</head>
+<body>
+<section id="index">
+    <header>
+        <nav>
+            <ul id="menu">
+                <li><a href="pages/projects.html">Projetos</a></li>
+                <li><a href="pages/experience.html">Experiência</a></li>
+                <li><a href="pages/about.html">Sobre</a></li>
+                <li><a href="pages/contact.html">Contato</a></li>
+            </ul>
+        </nav>
+        <button id="theme-toggle">Alternar Tema</button>
+    </header>
+
+    <section id="dynamic-section">
+        <h1 class="title-highlight">Hi! I'm Lucas Martins</h1>
+        <p class="intro-text">
+            Sou um desenvolvedor apaixonado por tecnologia e inovação, sempre explorando novas ideias e desafios. 
+            Amo programação, cultura pop e o vasto universo do conhecimento. 🚀
+        </p>
+    </section>
+    
+
+
+    <!-- Scripts -->
+    <script src="../src/scripts.js"></script>
+    <script src="../src/projects.js"></script>
+    <script src="../src/experience.js"></script>
+    <script src="../src/about.js"></script>
+    <script src="../src/contact.js"></script>
+    <script src="../src/footer.js"></script>
+    <script src="../src/theme.js"></script>
+</section>
+    <footer>
+        <p>&copy; 2025 Meu Portfólio - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

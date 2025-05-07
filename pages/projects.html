@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Programação</title>
+    
+    <!-- Estilos globais -->
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <!-- Estilos específicos -->
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/projects.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <script>
+        const theme = localStorage.getItem("theme") || "light";
+        if (theme === "dark") {
+            document.documentElement.classList.add("dark-mode");
+        }
+    </script>
+</head>
+<body>
+
+<header>
+    <nav>
+        <ul id="menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="projects.html">Projetos</a></li>
+            <li><a href="experience.html">Experiência</a></li>
+            <li><a href="about.html">Sobre</a></li>
+            <li><a href="contact.html">Contato</a></li>
+        </ul>
+    </nav>
+    <button id="theme-toggle">Alternar Tema</button>
+</header>
+
+<section id="projects">
+    <div class="projeto-container">
+
+        <!-- Primeiro Projeto: Beatles WebSite -->
+        <div class="projeto-card">
+            <h3>Beatles WebSite</h3>
+            <p><strong>Beatles Fanpage</strong> é um projeto web dedicado à banda britânica <strong>The Beatles</strong>. Criado como parte de um trabalho acadêmico, o site tem como objetivo oferecer aos fãs uma experiência interativa sobre a história e discografia da banda.</p>
+            <p>Desenvolvido com <strong>HTML, CSS e JavaScript</strong>, o site está hospedado no <strong>GitHub Pages</strong>. 🎶🚀</p>
+            
+            <div class="projeto-links">
+                <a href="https://github.com/Luc555/The-Beatles-Website" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://luc555.github.io/The-Beatles-Website/" target="_blank">
+                    <i class="fas fa-globe"></i>
+                </a>
+            </div>
+
+            <video src="/assets/videos/Beatles_project.mp4" controls></video>
+        </div>
+
+        <!-- Segundo Projeto: Monitoramento de Primatas -->
+        <div class="projeto-card">
+            <h3>Monitoramento de Primatas</h3>
+            <p>O projeto <strong>Monitoramento de Primatas</strong> é uma iniciativa da <strong>Universidade Unifeso</strong> em parceria com pesquisadores do <strong>Parque Nacional</strong>. Ele combina técnicas de <em>Geoprocessamento</em> e <em>Machine Learning</em> para rastrear o deslocamento dos primatas e prever suas chances de sobrevivência.</p>
+
+            <p>Utilizando os algoritmos <strong>K-Means</strong> e <strong>K-Nearest Neighbors (KNN)</strong>, o sistema analisa padrões de movimento, agrupa indivíduos com base em características semelhantes e avalia fatores como idade, peso e exposição a áreas urbanas, contribuindo para estudos de <em>conservação ambiental</em>.</p>
+            
+            <div class="projeto-links">
+                <a href="link-do-projeto-2" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="link-da-webpage-2" target="_blank">
+                    <i class="fas fa-globe"></i>
+                </a>
+            </div>
+            
+            <img src="../assets/images/CLUSTER MODELOS PRIMATAS.jpeg" alt="Cluster Primatas">
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 Meu Portfólio - Todos os direitos reservados.</p>
+</footer>
+
+<!-- Scripts -->
+<script src="../src/scripts.js"></script>
+<script src="../src/projects.js"></script>
+<script src="../src/footer.js"></script>
+<script src="../src/theme.js"></script>
+
+</body>
+</html>

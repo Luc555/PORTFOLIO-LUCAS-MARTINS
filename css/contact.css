@@ -1,0 +1,132 @@
+/* Definições do modo claro */
+:root {
+    --bg-color: #ffffff;
+    --text-color: #333;
+    --input-bg: #fff;
+    --input-border: #ccc;
+    --button-bg: #333;
+    --button-text: #fff;
+}
+
+/* Aplicação do tema */
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Título */
+.title {
+    color: blue;
+    margin: 1em;
+    text-align: center;
+    font-size: 3em; /* Ajustei para um tamanho mais equilibrado */
+}
+
+.subtitle {
+    margin: 1em;
+    text-align: center;
+    font-size: 1.3em;
+    margin-top: 10px;
+}
+
+/* Centralizando a seção de contato */
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px; /* Mantém um tamanho adequado */
+    margin: 0em auto;
+    background-color: var(--bg-color);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1em;
+}
+
+/* Labels */
+label {
+    font-weight: bold;
+    font-size: 1.2em; /* Maior legibilidade */
+    color: var(--text-color);
+    text-align: left; /* Mantém alinhamento adequado */
+    padding-left: 5px;
+}
+
+/* Inputs */
+input, textarea {
+    padding: 0.8em;
+    font-size: 1.1em;
+    background-color: var(--input-bg);
+    color: var(--text-color);
+    border: 1px solid var(--input-border);
+    border-radius: 5px;
+    width: 100%;
+}
+
+/* Ajuste no campo de mensagem */
+textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+/* Botão */
+button {
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    padding: 0.8em 1.2em;
+    font-size: 1.1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    border: 1px solid black;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Ajustando o botão no modo escuro */
+.dark-mode button {
+    background-color: white;
+    color: black;
+}
+
+button:hover {
+    background-color: red;
+    color: white;
+    border-color: white;
+}
+
+/* Ajuste no botão do tema */
+#theme-toggle {
+    position: absolute;
+    top: 2px;
+    right: 20px;
+    background-color: var(--primary-color);
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 2px 4px 8px rgba(0,0,0,0.2);
+    border: 2px solid white;
+}
+
+.dark-mode #theme-toggle {
+    border-color: var(--text-color);
+    color: white;
+}
+
+#theme-toggle:hover {
+    background-color: var(--text-color);
+    color: var(--primary-color);
+    transform: scale(1.05);
+}
