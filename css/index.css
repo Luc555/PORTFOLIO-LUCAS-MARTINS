@@ -1,13 +1,22 @@
-
 #dynamic-section {
     display: flex;
     flex-direction: column;
     justify-content: center; /* Centraliza verticalmente */
     align-items: center; /* Centraliza horizontalmente */
     text-align: center;
-    min-height: 50vh; /* Mantém o conteúdo ao centro */
+    min-height: 70vh; /* Mantém o conteúdo ao centro */
     max-width: 600px;
     margin: 0 auto; /* Garante que não fique desalinhado */
+    padding: 20px; /* Espaçamento interno */
+}
+
+/* Ajuste para telas menores */
+@media screen and (max-width: 480px) {
+    #dynamic-section {
+        min-height: 90vh;
+        padding: 15px;
+        max-width: 90%; /* Ajuste para não ultrapassar a largura da tela */
+    }
 }
 
 .title-highlight {
@@ -16,18 +25,34 @@
     margin-bottom: 10px; /* Pequeno espaço para o texto abaixo */
 }
 
+/* Ajuste de tamanho de fonte para telas menores */
+@media screen and (max-width: 480px) {
+    .title-highlight {
+        font-size: 2.5em;
+    }
+}
+
 .intro-text {
     font-size: 1.2em;
     margin: 0 20px; /* Reduzindo margens laterais */
 }
 
+/* Ajustando para dispositivos menores */
+@media screen and (max-width: 480px) {
+    .intro-text {
+        font-size: 1em;
+        margin: 0 10px;
+    }
+}
+
+/* Botão de alternância de tema */
 #theme-toggle {
     position: absolute;
-    top: 26px;
-    right: 20px;
+    top: 16px;
+    right: 60px;
     background-color: var(--primary-color);
     color: var(--text-color);
-    padding: 4px 8px; /* Reduzi o tamanho do botão */
+    padding: 6px 10px; /* Ajuste para melhorar a usabilidade */
     border-radius: 6px;
     font-size: 1em;
     font-weight: bold;
@@ -35,6 +60,16 @@
     transition: background 0.3s ease, transform 0.2s ease;
     box-shadow: 2px 4px 8px rgba(0,0,0,0.2);
     border: 2px solid white; /* Adicionando a linha branca ao redor */
+}
+
+/* Ajuste do botão para telas menores */
+@media screen and (max-width: 480px) {
+    #theme-toggle {
+        top: 15px;
+        right: 10px;
+        padding: 4px 8px;
+        font-size: 0.9em;
+    }
 }
 
 /* Ajustando o botão no modo escuro */
@@ -48,3 +83,34 @@
     transform: scale(1.05);
 }
 
+/* 📌 Responsividade adicional para telas menores que 375px */
+@media screen and (max-width: 375px) {
+    .title-highlight {
+        font-size: 2.2em;
+    }
+
+    .intro-text {
+        font-size: 0.95em;
+    }
+
+    #theme-toggle {
+        font-size: 0.85em;
+    }
+}
+
+/* 📌 Responsividade adicional para telas menores que 320px */
+@media screen and (max-width: 320px) {
+    .title-highlight {
+        font-size: 2em;
+    }
+
+    .intro-text {
+        font-size: 0.9em;
+        margin: 0 5px;
+    }
+
+    #theme-toggle {
+        font-size: 0.8em;
+        padding: 3px 6px;
+    }
+}
