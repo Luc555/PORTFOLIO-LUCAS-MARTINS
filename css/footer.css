@@ -1,21 +1,75 @@
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    transition: background-color 0.3s ease, color 0.3s ease, opacity 0.3s ease-in-out;
-    
+:root {
+    --footer-bg-color: #424242;
+    --footer-text-color: #fff;
+    --footer-padding: 1em;
+    --footer-font-size: 1em;
 }
 
-section {
-    flex: 1; /* Faz com que a section ocupe o espaço disponível */
-}
 
+
+/* 🔹 Estilos do footer */
 footer {
     text-align: center;
-    padding: 1em;
-    background-color: #424242;
-    color: #fff;
-    width: 100%;
+    padding: var(--footer-padding);
+    background-color: var(--footer-bg-color);
+    color: var(--footer-text-color);
+    font-size: var(--footer-font-size);
+}
+
+/* 🔥 Responsividade refinada 🔥 */
+
+/* 📌 Até 320px */
+@media screen and (max-width: 320px) {
+    :root {
+        --footer-padding: 0.6em;
+        --footer-font-size: 0.8em;
+    }
+}
+
+/* 📌 De 321px até 375px */
+@media screen and (min-width: 321px) and (max-width: 375px) {
+    :root {
+        --footer-padding: 0.7em;
+        --footer-font-size: 0.85em;
+    }
+}
+
+/* 📌 De 376px até 480px */
+@media screen and (min-width: 376px) and (max-width: 480px) {
+    :root {
+        --footer-padding: 0.8em;
+        --footer-font-size: 0.9em;
+    }
+}
+
+/* 📌 De 481px até 768px */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    :root {
+        --footer-padding: 0.9em;
+        --footer-font-size: 1em;
+    }
+}
+
+/* 📌 De 769px até 1024px */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    :root {
+        --footer-padding: 1em;
+        --footer-font-size: 1.1em;
+    }
+}
+
+/* 📌 De 1025px até 1068px */
+@media screen and (min-width: 1025px) and (max-width: 1068px) {
+    :root {
+        --footer-padding: 1.2em;
+        --footer-font-size: 1.2em;
+    }
+}
+
+/* 📌 Acima de 1068px */
+@media screen and (min-width: 1069px) {
+    :root {
+        --footer-padding: 1.3em;
+        --footer-font-size: 1.3em;
+    }
 }
